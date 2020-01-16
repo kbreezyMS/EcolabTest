@@ -20,11 +20,11 @@ modules:
       - name: hdi_db
         properties:
           TARGET_CONTAINER: '~{hdi-container-name}'
-      - name: cross-container-service-1
-        group: SERVICE_REPLACEMENTS
+      - name: UAA-service
+      - name: hdi-container
         properties:
-          key: ServiceName_1
-          service: '~{the-service-name}'
+          TARGET_CONTAINER: '~{hdi-container-service}'
+      - name: EBSSEG100-schema-grantor
   - name: core_xsjs
     type: nodejs
     path: core_xsjs
@@ -48,13 +48,9 @@ resources:
     properties:
       hdi-container-name: '${service-name}'
     type: com.sap.xs.hdi-container
-  - name: cross-container-service-1
-    parameters:
-      service-name: CROSS_SCHEMA_PRODUCTS
+  - name: hdi-container
+    type: com.sap.xs.hdi-container
     properties:
-      the-service-name: '${service-name}'
+      hdi-container-service: '${service-name}'
+  - name: EBSSEG100-schema-grantor
     type: org.cloudfoundry.existing-service
-  - name: CROSS_SCHEMA_PRODUCTS
-    type: org.cloudfoundry.existing-service
-    properties:
-      the-service-name: '${service-name}'

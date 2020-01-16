@@ -1,0 +1,14 @@
+{
+  "VBAP": {
+    "target": {
+      "object": "VBAP",
+      "schema": "EBSSEG100"
+    }
+  },
+  "VBAK": {
+    "target": {
+      "object": "VBAK",
+      "schema": "EBSSEG100"
+    }
+  }
+}
