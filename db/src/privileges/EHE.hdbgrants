@@ -1,0 +1,14 @@
+{
+	"EBSSEG100-schema-grantor": {
+		"object_owner": { 
+			"roles": [
+				"EBSSEG100::external_access_g"
+			]
+		},
+		"application_user": {
+			"roles": [
+				"EBSSEG100::external_access"
+			]
+		}
+	}
+}
