@@ -1,3 +1,6 @@
-service {
-  "SOItems" as "SOItems"
+service namespace "db.models" {
+  "db.models::SODetail" as "SODetail" key ("VBELN","POSNR")
+  create forbidden
+  update forbidden
+  delete forbidden;
 }

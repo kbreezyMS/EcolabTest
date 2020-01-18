@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="db.models::SOItems" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
-<descriptions defaultDescription="SOItems"/>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="db.models::SODetail" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="SODetail"/>
 <localVariables/>
 <variableMappings/>
 <dataSources>
-  <DataSource id="VBAP">
-    <resourceUri>VBAP</resourceUri>
+  <DataSource id="XSASecurityPOC.db::synonyms.VBAP">
+    <resourceUri>XSASecurityPOC.db::synonyms.VBAP</resourceUri>
   </DataSource>
 </dataSources>
 <calculationViews/>
-<logicalModel id="VBAP">
+<logicalModel id="XSASecurityPOC.db::synonyms.VBAP">
   <attributes>
     <attribute id="VBELN" order="1" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="Sales Document"/>
-      <keyMapping columnObjectName="VBAP" columnName="VBELN"/>
+      <keyMapping columnObjectName="synonyms.VBAP" columnName="VBELN"/>
     </attribute>
     <attribute id="POSNR" order="2" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="Sales Document Item"/>
-      <keyMapping columnObjectName="VBAP" columnName="POSNR"/>
+      <keyMapping columnObjectName="synonyms.VBAP" columnName="POSNR"/>
     </attribute>
     <attribute id="MATNR" order="3" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="Material Number"/>
-      <keyMapping columnObjectName="VBAP" columnName="MATNR"/>
+      <keyMapping columnObjectName="synonyms.VBAP" columnName="MATNR"/>
     </attribute>
   </attributes>
   <calculatedAttributes/>

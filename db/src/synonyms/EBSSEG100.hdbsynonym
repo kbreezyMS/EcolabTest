@@ -1,11 +1,11 @@
 {
-  "VBAP": {
+  "XSASecurityPOC.db::synonyms.VBAP": {
     "target": {
       "object": "VBAP",
       "schema": "EBSSEG100"
     }
   },
-  "VBAK": {
+  "XSASecurityPOC.db::synonyms.VBAK": {
     "target": {
       "object": "VBAK",
       "schema": "EBSSEG100"
